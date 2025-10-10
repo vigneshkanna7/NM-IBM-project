@@ -1,8 +1,3 @@
-# NM-IBM-project
-
-Here’s a professional and complete **README.md** content for your project titled **“User Profile Management System”** 👇
-
----
 
 # 🧑‍💼 User Profile Management System
 
@@ -147,9 +142,3 @@ You’re free to use, modify, and distribute it with attribution.
 For any queries or feedback, please contact:
 📧 **[your-email@example.com](mailto:your-email@example.com)**
 🌐 [GitHub Profile](https://github.com/your-username)
-
----
-
-Would you like me to **customize the README** for a **specific tech stack** (e.g., Django, Flask, or Node.js + React)?
-That way, I can tailor the setup and folder structure exactly to your project.
-
