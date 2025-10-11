@@ -1,144 +1,91 @@
+# 📚 Library Management System
 
-# 🧑‍💼 User Profile Management System
-
-## 📘 Overview
-
-The **User Profile Management System** is a web-based application that allows users to create, update, and manage their personal profiles efficiently.
-This system provides a secure and user-friendly interface for storing and retrieving user information such as name, contact details, profile pictures, and other relevant data.
-
-It is designed to simplify profile management for both end-users and administrators, ensuring data consistency, privacy, and ease of access.
+A simple **Library Management System** built using **JavaScript** that allows users to manage books efficiently.
+This system supports adding, viewing, searching, and removing books, making it ideal for small-scale library management or learning purposes.
 
 ---
 
-## 🎯 Objectives
+## 🚀 Features
 
-* To provide a centralized platform for user profile management.
-* To ensure data security and access control.
-* To enable easy editing, updating, and deletion of user profiles.
-* To improve efficiency in managing user data across applications.
-
----
-
-## 🏗️ Features
-
-* 🔐 **User Authentication** – Secure login and registration system.
-* 👤 **Profile Creation & Editing** – Add, update, or delete user details.
-* 🖼️ **Profile Picture Upload** – Users can upload and manage profile images.
-* 🔎 **Search & Filter** – Admin can search users by name, email, or ID.
-* 🧾 **Data Validation** – Ensures accuracy and integrity of user information.
-* 🗄️ **Database Integration** – Stores all user data securely in a database.
-* 📱 **Responsive Design** – Works seamlessly on desktop and mobile devices.
+* ➕ **Add Book** – Add new books to the library with title, author, and year.
+* 🔍 **Search Book** – Search books by title (case-insensitive).
+* 📋 **View All Books** – Display all available books in the library.
+* ❌ **Remove Book** – Delete books using their unique ID.
+* 💾 **In-Memory Storage** – Data is stored temporarily in memory (can be extended to use databases).
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Category               | Technologies                             |
-| ---------------------- | ---------------------------------------- |
-| **Frontend**           | HTML, CSS, JavaScript, Bootstrap / React |
-| **Backend**            | Python (Flask / Django) / Java / Node.js |
-| **Database**           | MySQL / PostgreSQL / MongoDB             |
-| **Authentication**     | JWT / Session-based login                |
-| **Version Control**    | Git & GitHub                             |
-| **Hosting (optional)** | Render / Vercel / AWS / Localhost        |
+* **JavaScript (ES6)**
+* **Node.js** (optional – for running the script in terminal)
+* **HTML/CSS** (optional – for web UI version)
 
 ---
 
-## ⚙️ System Architecture
-
-1. **Frontend** – Collects and displays user data via interactive UI.
-2. **Backend** – Handles business logic, authentication, and database interaction.
-3. **Database** – Stores user profiles, credentials, and metadata securely.
-
----
-
-## 🚀 Installation & Setup
-
-### Prerequisites
-
-* Install **Python / Node.js / Java** (depending on your backend)
-* Install **MySQL** or preferred database
-* Install **Git**
-
-### Steps
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/user-profile-management-system.git
-
-# Navigate to the project directory
-cd user-profile-management-system
-
-# Install dependencies
-npm install  # or pip install -r requirements.txt
-
-# Run the application
-npm start  # or python app.py
-```
-
-Then, open your browser and go to
-👉 **[http://localhost:3000](http://localhost:3000)** or **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
-
----
-
-## 📂 Folder Structure
+## 📂 Project Structure
 
 ```
-user-profile-management-system/
+Library-Management-System/
 │
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│
-├── backend/
-│   ├── app.py / server.js / Main.java
-│   ├── models/
-│   ├── routes/
-│
-├── database/
-│   ├── schema.sql
-│
-├── README.md
-└── package.json / requirements.txt
+├── index.js          # Main JavaScript code (console version)
+├── index.html        # (Optional) Web interface file
+├── style.css         # (Optional) Styling for web interface
+└── README.md         # Project documentation
 ```
 
 ---
 
-## 🔒 Security Measures
+## ⚙️ How to Run (Console Version)
 
-* Passwords stored using hashing (bcrypt / SHA256).
-* Session or token-based authentication.
-* Input validation to prevent SQL injection and XSS.
+1. **Clone the repository**
 
----
+   ```bash
+   git clone https://github.com/yourusername/library-management-system.git
+   ```
+2. **Navigate to project folder**
 
-## 📈 Future Enhancements
+   ```bash
+   cd library-management-system
+   ```
+3. **Run the program**
 
-* Implement role-based access (Admin, User).
-* Add email verification and password recovery.
-* Integrate cloud storage for profile images.
-* Enable multi-language support.
-* Add analytics dashboard for admin users.
-
----
-
-## 🤝 Contributors
-
-* **Your Name** – Developer / Project Owner
-  (Optionally add teammates or guide names)
+   ```bash
+   node index.js
+   ```
 
 ---
 
-## 🧾 License
+## 🧠 Example Usage
 
-This project is open-source under the **MIT License**.
-You’re free to use, modify, and distribute it with attribution.
+```javascript
+const library = new Library();
+
+const book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925, 1);
+const book2 = new Book("1984", "George Orwell", 1949, 2);
+
+library.addBook(book1);
+library.addBook(book2);
+
+library.listBooks();
+library.searchBook("1984");
+library.removeBook(1);
+```
 
 ---
 
-## 💬 Contact
+## 🧩 Future Enhancements
 
-For any queries or feedback, please contact:
-📧 **[your-email@example.com](mailto:your-email@example.com)**
-🌐 [GitHub Profile](https://github.com/your-username)
+* 💽 Connect with a database (MongoDB or MySQL)
+* 🌐 Add a web-based user interface
+* 🧾 Implement user authentication (Admin & Member)
+* 📊 Track issued and returned books
+
+---
+
+## 👨‍💻 Author
+
+**Vigneshkanna B.S**
+📧 Email: [[your-email@example.com](mailto:your-email@example.com)]
+💼 GitHub: [your-github-profile](https://github.com/yourusername)
+
